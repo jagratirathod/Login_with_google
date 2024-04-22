@@ -1,0 +1,24 @@
+<div style="background-color: bisque; height:max-content">
+<center>
+
+{% if messages %}
+{% for message in messages %}
+<div>{{ message|safe }}</div>
+{% endfor %}
+{% endif %}
+
+     <div>
+            <br>
+            <h2>Login here </h2>
+            <br>
+
+            <button>
+            <a href = "{% url 'social:begin' 'google-oauth2' %}">Login with Google </a>
+            </button>
+
+        </form>
+    </div>
+
+</center>
+</div>
+
